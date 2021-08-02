@@ -7,7 +7,7 @@
   enable_guicolors = true
 
   bootstrap_before = 'config#before'
-  #bootstrap_after = 'config#after'
+  bootstrap_after = 'config#after'
 
   enable_vimfiler_gitstatus = true
 
@@ -37,6 +37,9 @@
 
 [[layers]]
   name = "tmux"
+
+[[layers]]
+  name = "git"
 
 [[layers]]
   name = "VersionControl"

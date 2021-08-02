@@ -21,5 +21,9 @@ function! config#before() abort
 
 endfunction
 
-"function! myspacevim#after() abort
-"endfunction
+function! config#after() abort
+  "python add debugger
+
+  nnoremap <leader>p oimport ipdb; ipdb.set_trace()<Esc>
+
+endfunction

@@ -2,16 +2,16 @@
 
 ```
 # oh-my-zsh theme
-ln -s $PWD/oh-my-zsh-themes/custom-theme-01.zsh-theme $HOME/.oh-my-zsh/themes/custom-theme-01.zsh-theme
+ln -sf $PWD/oh-my-zsh-themes/custom-theme-01.zsh-theme $HOME/.oh-my-zsh/themes/custom-theme-01.zsh-theme
 
 # Tmux
-ln -s $PWD/tmux/tmux.conf $HOME/.tmux.conf
+ln -sf $PWD/tmux/tmux.conf $HOME/.tmux.conf
 
 # Alacritty
-ln -s $PWD/alacritty/alacritty.yml /home/jg/.config/alacritty/alacritty.yml
+ln -sf $PWD/alacritty/alacritty.yml /home/jg/.config/alacritty/alacritty.yml
 
 # SpaceVim
-ln -sf $PWD/spacevim/autoload/config.vim $HOME/.SpaceVim.d/autoload/config.vim
-mkdir ~/.SpaceVim.d/autoload
+mkdir -p $HOME/.SpaceVim.d $HOME/.SpaceVim.d/autoload
+ln -sf $PWD/spacevim/init.toml $HOME/.SpaceVim.d/init.toml
 ln -sf $PWD/spacevim/autoload/config.vim $HOME/.SpaceVim.d/autoload/config.vim
 ```

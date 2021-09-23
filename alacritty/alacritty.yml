@@ -6,7 +6,8 @@ env:
   TERM: xterm-256color
 
 key_bindings:
-  - { key: F11, command: { program: "/bin/sh", args: ["-c", "wmctrl -ir $(xdotool getwindowfocus) -b toggle,fullscreen" ] } }
+  - { key: F11, action: ToggleFullscreen }
+  - { key: Q, mods: Control, action: Quit }
 
 colors:
   primary:

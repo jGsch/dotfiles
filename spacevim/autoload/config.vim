@@ -7,8 +7,11 @@ function! config#before() abort
   let g:mapleader = ","
 
   "ale config
-  let g:ale_python_flake8_options = '--max-line-length=88  --max-complexity 18 --ignore E203,E303,E501,W291,W503,C901,D107,D102,D202,D205,D403'
+  let g:ale_python_flake8_options = '--max-line-length=88  --max-complexity 18 --ignore E203,E301,E303,E501,W291,W503,C901,D107,D102,D202,D205,D403'
+  let g:ale_python_mypy_options = '--ignore-missing-imports --allow-redefinition'
   let g:airline#extensions#ale#enabled = 1
+
+  let g:neoformat_run_all_formatters = 1
 
 endfunction
 

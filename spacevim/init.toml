@@ -1,4 +1,6 @@
 [options]
+  default_indent = 4
+
   filemanager = "nerdtree"
   filetree_direction = "left"
 

@@ -1,0 +1,8 @@
+
+icons:
+  when: never
+
+sorting:
+  dir-grouping: first
+
+total-size: true

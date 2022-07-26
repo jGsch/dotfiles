@@ -1,0 +1,50 @@
+theme = "gruvbox"
+
+[editor]
+
+idle-timeout = 10
+
+
+[keys.normal]
+
+# Move 
+C-h = "jump_view_left"
+# C-j = "jump_view_down"
+# C-k = "jump_view_up"
+C-l = "jump_view_right"
+
+# insert ipdb 
+C-p = ":insert-output echo '# fmt: off' && echo 'import ipdb; ipdb.set_trace()' && echo '#fmt: on'"
+
+[keys.normal."à"]
+# remove ] to à
+
+"D"  = "goto_last_diag"
+"f"  = "goto_prev_function"
+"c"  = "goto_prev_class"
+"a"  = "goto_prev_parameter"
+# "t"  = "goto_prev_test"
+"o" = "goto_prev_comment"
+"p"  = "goto_prev_paragraph"
+"space" = "add_newline_below"
+
+[keys.normal."é"]
+# remove [ to é
+
+"o"  = "goto_prev_diag"
+"D"  = "goto_first_diag"
+"f" = "goto_next_function"
+"c" = "goto_next_class"
+"a" = "goto_next_parameter"
+#d"  = "goto_next_diag" }
+"o" = "goto_next_comment"
+"p" = "goto_next_paragraph"
+"space" = "add_newline_above" 
+
+[keys.insert]
+
+# Maps `jk` to exit insert mode
+j = { k = "normal_mode" } 
+
+
+
